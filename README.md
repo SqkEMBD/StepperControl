@@ -1,5 +1,52 @@
 # Stepper Motor Control
 <!-- Comments -->
+## L298N Step Motor driver (H-Bridge Driver)
+****
+<!-- Image embedded -->
+<img src="Assets/L298N/L298N-Pinout.png" width="500" height="350"/>  
+
+[L298N Motor Driver Module](https://www.zonemaker.com/product/203/l298n-motor-driver-module)  
+
+### Specification
+- Driver chip : L298N dual H-bridge driver chip
+- Terminal driver part of the supply area VMS : +5 V ~ +35 V
+- Drive part of the peak current Io : 2A / Bridge
+- Logical part of the terminal power supply range Vss : 4.5-5 .5 V
+- Logical part of the operating current range : 0 ~ 36mA
+- The control signal input voltage range : 4.5-5.5V low 0V high
+- Maximum power consumption : 20W
+- Storage temperature : -25 ~ +130
+- Driver Board Size : 55mm * 60mm * 30mm
+- Driver board Weight : 33g
+- Other features : control direction indicator, power indicator, current detection, logical part of the plate to take power interface.
+
+### Reference 
+[Control Stepper Motor with L298N Motor Driver & Arduino](https://lastminuteengineers.com/stepper-motor-l298n-arduino-tutorial/)
+
+### Driver Pinout
+| Pin # | Pin name  | Description                                                      |
+| ----- | --------- | ---------------------------------------------------------------- |
+| 1     | VS (+12V) | Power Supply Input Positive /5V to 12V (Operating Voltage)       |
+| 2     | GND       | common ground pin                                                |
+| 3     | VSS (+5V) | drive the logic circuitry, which can be 5 to 7V)                 |
+| 4     | ENA       | Enable/Disable motor indepently of the input signals (IN1, IN2)  |
+| 5     | IN1       | Control pins, speed and spinning direction of the stepper motor. |
+| 6     | IN2       | Control pins, speed and spinning direction of the stepper motor. |
+| 7     | IN3       | Control pins, speed and spinning direction of the stepper motor. |
+| 8     | IN4       | Control pins, speed and spinning direction of the stepper motor. |
+| 9     | ENB       | Enable/Disable motor indepently of the input signals (IN3, IN4)  |
+| 10    | OUT1      | motor driver’s output can connect any 12-24V                     |
+| 11    | OUT2      | motor driver’s output can connect any 12-24V                     |
+| 12    | OUT3      | motor driver’s output can connect any 12-24V                     |
+| 12    | OUT4      | motor driver’s output can connect any 12-24V                     |
+
+****
+### Simple Stepper Wiring diagram
+<!-- Product Drawing -->
+<img src="Assets/L298N/L298N-Stepper-Diagram.png" width="450" height="200" />
+
+****
+
 ## TB6600  Microstep driver 
 ****
 
@@ -17,7 +64,7 @@
 <!-- <img src="Assets/TB6600.jpg" alt="TB6600" style="width:500px; height:400px"/> -->
 
 <!-- 5 -->
-<img src="Assets/TB6600.jpg" width="450" height="400"/>  
+<img src="Assets/TB6600/TB6600.jpg" width="450" height="400"/>  
 
 <!-- 6 -->
 <!-- <img src="Assets/TB6600.jpg" width="45%" height="40%" /> -->
@@ -93,14 +140,14 @@ https://www.youtube.com/watch?v=VrhJoc_XkrU&ab_channel=MundoC.N.C.conArduino
 ****
 ### Product Drawing
 <!-- Product Drawing -->
-<img src="Assets/TB6600Drawing.jpg" width="450" height="400" />
+<img src="Assets/TB6600/TB6600Drawing.jpg" width="450" height="400" />
 
 ****
 
 ## DM542 Microstep Driver 
 
 <!-- Product Image -->
-<img src="Assets/DM542.jpg" width="400" height="500"/>  
+<img src="Assets/DM542/DM542.jpg" width="400" height="500"/>  
 
 [DM542 (Leadshine) Microstep Driver Peak 4.2A, 20-50 VDC 2-Phase](https://www.zonemaker.com/product/1348/dm542-leadshine-microstep-driver-peak-4-2a-20-50-vdc-2-phase-2) 
 
@@ -189,21 +236,15 @@ Size:11.7*8.5cm/4.61*3.35inch
 ****
 ### Product Drawing
 <!-- Product Drawing -->
-<img src="Assets/DM542Drawing.jpg" width="450" height="400" />
+<img src="Assets/DM542/DM542Drawing.jpg" width="450" height="400" />
 
 ****
-## MOONS SR2+
+## MOONS SR2 Plus
 ****
 
 ### Ref
 [link1](https://www.moonsindustries.com/p/sr-series-two-phase-dc-stepper-motor-drives/sr2-plus-000004696351001983)
 
 
-****
-###
-Driver  
--TBD
 
-Motor   
--Step 
 
